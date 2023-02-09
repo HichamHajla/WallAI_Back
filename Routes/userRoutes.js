@@ -1,6 +1,6 @@
 import express from "express";
-import verify from "../Middlewares/verify.js";
-import Users from "../MongoDB/models/users.js";
+import verify from "../middlewares/verify.js";
+import Users from "../mongoDB/models/users.js";
 import multer from "multer";
 
 const storage = multer.diskStorage({

@@ -1,13 +1,12 @@
-// type:module in package json
 import express from "express";
 import * as dotenv from "dotenv";
 import cors from "cors";
-import connectDB from "./MongoDB/connect.js";
-import postRoutes from './Routes/postRoutes.js';
-import wallRoutes from './Routes/wallRoutes.js';
-import authRoutes from './Routes/authRoutes.js';
-import userRoutes from "./Routes/userRoutes.js";
-import commentRoutes from "./Routes/commentRoutes.js";
+import connectDB from "./mongoDB/connect.js";
+import postRoutes from './routes/postRoutes.js';
+import wallRoutes from './routes/wallRoutes.js';
+import authRoutes from './routes/authRoutes.js';
+import userRoutes from "./routes/userRoutes.js";
+import commentRoutes from "./routes/commentRoutes.js";
 import path from "path";
 import fs from "fs"
 

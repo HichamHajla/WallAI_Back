@@ -1,5 +1,5 @@
 import express from "express";
-import Users from "../MongoDB/models/users.js";
+import Users from "../mongoDB/models/users.js";
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
 import multer from "multer";
@@ -55,5 +55,7 @@ authRoutes.post('/login', async (req, res)=> {
     res.header("auth-token", token)
     res.json([token, user])
 })
+
+
 
 export default authRoutes

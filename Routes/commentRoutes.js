@@ -1,5 +1,5 @@
 import express from "express";
-import Comment from "../MongoDB/models/comment.js"
+import Comment from "../mongoDB/models/comment.js"
 
 
 const router = express.Router();

@@ -1,9 +1,9 @@
 import express from "express";
 import * as dotenv from "dotenv";
 import { v2 as cloudinary } from 'cloudinary'
-import verify from "../Middlewares/verify.js";
+import verify from "../middlewares/verify.js";
 
-import Post from '../MongoDB/models/post.js';
+import Post from '../mongoDB/models/post.js';
 
 dotenv.config();
 
