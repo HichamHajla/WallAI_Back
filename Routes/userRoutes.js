@@ -16,23 +16,23 @@ const storage = multer.diskStorage({
 
 const userRoutes = express.Router()
 
-userRoutes.get('/users', verify, async (req, res) => {
-    try {
-        res.json(req.user)
-    }
-    catch(err){
-        res.json(err)
-    }
-})
-
-// userRoutes.get('/users', (req, res) => {
-//     Users
-//     .find()
-//     .then(user => 
-//         res.json(user)
-//         )
-//     .catch(err => res.json(err))
+// userRoutes.get('/users', verify, async (req, res) => {
+//     try {
+//         res.json(req.user)
+//     }
+//     catch(err){
+//         res.json(err)
+//     }
 // })
+
+userRoutes.get('/users', (req, res) => {
+    Users
+    .find()
+    .then(user => 
+        res.json(user)
+        )
+    .catch(err => res.json(err))
+})
 
 userRoutes.get('/users/:id', (req, res) => {
     Users
@@ -57,4 +57,4 @@ userRoutes.put('/users/:id', upload.single('image'), async (req,res) => {
 })
 
 
-export default userRoutes
+export default userRoutes;
