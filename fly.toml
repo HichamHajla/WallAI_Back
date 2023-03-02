@@ -1,4 +1,4 @@
-# fly.toml file generated for wall-ai on 2023-02-09T16:21:51+01:00
+# fly.toml file generated for wall-ai on 2023-03-02T12:19:54+01:00
 
 app = "wall-ai"
 kill_signal = "SIGINT"
